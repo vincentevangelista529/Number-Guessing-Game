@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --background:      #0F1B2D;  /* deep night sky blue */
+  --surface:         #1A2E4A;  /* lighter navy for cards */
+  --surface-hover:   #243D5E;  /* hover state */
+  --primary:         #F6C90E;  /* sun yellow */
+  --primary-hover:   #D4AC0D;  /* darker yellow on hover */
+  --accent:          #4A9EE0;  /* sky blue */
+  --text-primary:    #F0F4F8;  /* clean white */
+  --text-secondary:  #8AAFC7;  /* muted blue-grey */
+  --text-muted:      #4A6A8A;  /* very muted */
+  --color-border:    #2A4A6A;  /* subtle border */
+  --border-active:   #F6C90E;  /* gold yellow active */
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+input {
+  width: 300px;
+  padding: 6px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  outline: none;
+  color: var(--text-primary);
+  background-color: var(--surface);
+  height: 50px;
+}
+
+.btn-guess {
+  background-color: var(--surface);
+  color: var(--text-primary);
+  padding: 6px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.btn-restart {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 10px;
+}
+#desc {
+  color: var(--text-primary);
+}
+
+#desc span {
+  color: red;
+}
+
+#feedback {
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+#attemptCounter {
+  font-size: 12px;
+  color: var(--text-muted);
+}
